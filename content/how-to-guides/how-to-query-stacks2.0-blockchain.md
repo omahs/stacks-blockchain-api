@@ -59,7 +59,7 @@ A Typescript client library is available for use of the Stacks API. The client l
 The client is made up of three components:
 
 1. Generated HTTP API client
-2. Typescript definitions for [Clarity values](https://docs.stacks.co/docs/write-smart-contracts/values)
+2. Typescript definitions for [Clarity values](https://docs.stacks.co/docs/clarity/crash-course)
 3. WebSocket client
 
 The following sections demonstrate common usages of the TypeScript API client.
@@ -229,13 +229,13 @@ The search operation used by the endpoint (for example, `FROM txs WHERE tx_id = 
 
 ## Using Clarity values
 
-Some endpoints, like the [read-only function contract call](https://docs.hiro.so/api#operation/call_read_only_function), require input to as serialized [Clarity value](https://docs.stacks.co/docs/write-smart-contracts/values). Other endpoints return serialized values that need to be deserialized.
+Some endpoints, like the [read-only function contract call](https://docs.hiro.so/api#operation/call_read_only_function), require input to as serialized Clarity value. Other endpoints return serialized values that need to be deserialized.
 
 Below is an example for Clarity value usage in combination with the API.
 
 :::info
 
-The example below is for illustration only. The `@stacks/transactions` library supports typed contract calls and makes [response value utilization much simpler](https://docs.stacks.co/docs/write-smart-contracts/values#utilizing-clarity-values-from-transaction-responses)
+The example below is for illustration only. The `@stacks/transactions` library supports typed contract calls and makes response value utilization much simpler.
 
 :::
 
